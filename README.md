@@ -7,4 +7,15 @@
 > ng new foodev --routing=true --style=scss
 
   - Skip all test file:
-    - Open angular.json file -> 
+    - Open angular.json file:
+  
+```json
+{
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss",
+      "skipTests": true
+    }
+  }
+}
+```
