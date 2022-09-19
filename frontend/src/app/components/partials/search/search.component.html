@@ -1,0 +1,17 @@
+<div>
+  <!--
+    #foodInput: template reference variable
+    very beautiful: you can directly access to input everywhere inside
+    your html file
+    when you it for a tag, it will hold all the data about that specific
+    tag
+  -->
+  <input
+    #foodInput
+    type="text"
+    placeholder="Search Food Dev!"
+    (keyup.enter)="search(foodInput.value)"
+    [value]="searchTerm"
+  />
+  <button (click)="search(foodInput.value)">Search</button>
+</div>
