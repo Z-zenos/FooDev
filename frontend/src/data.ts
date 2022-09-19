@@ -18,7 +18,7 @@ export const sample_food: Food[] = [
     price: 20,
     cookTime: '20-30',
     favorite: true,
-    origins: ['persia', 'middle east', 'china'],
+    origins: ['persia', 'middle east', 'china', 'vietnam'],
     stars: 4.7,
     imageUrl: 'assets/food-2.jpg',
     tags: ['SlowFood', 'Lunch'],
