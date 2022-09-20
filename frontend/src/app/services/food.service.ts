@@ -29,4 +29,12 @@ export class FoodService {
       this.getAllFoods() :
       this.getAllFoods().filter(f => f.tags?.includes(tag));
   }
+
+  getFoodById(foodId: string): Food {
+    /*
+      find method could return an undefined
+      -> Use coalescing operator (??) when previous part is undefined
+    */
+    return this.getAllFoods().find(f => f.id === foodId) ?? new Food();
+  }
 }
