@@ -60,4 +60,8 @@
    - Generate Tags component
      - Add to home component
      - Add ts, html, css
-5. a
+5. Food page
+   - Add method to food service
+   - Generate Food page component
+     - Add route
+     - Add ts, html, css
