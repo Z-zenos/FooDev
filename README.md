@@ -60,8 +60,18 @@
    - Generate Tags component
      - Add to home component
      - Add ts, html, css
+
 5. Food page
    - Add method to food service
    - Generate Food page component
+     - Add route
+     - Add ts, html, css
+
+6. Cart page
+   - Create CartItem Model
+   - Create Cart Model
+   - Generate Cart service
+   - Add to Cart Button in Food Page
+   - Generate Cart page component
      - Add route
      - Add ts, html, css
