@@ -20,7 +20,10 @@ export class FoodPageComponent implements OnInit {
     this._activatedRoute.params.subscribe((params: Params) => {
       const foodId = params['id'];
       if(foodId) {
-        this.food = this._foodService.getFoodById(foodId);
+        this._foodService.getFoodById(foodId).subscribe(food => {
+          // @ts-ignore
+          this.food = food['data'].food;
+        });
       }
       else {
         console.error('ERROR: No food found matching id');
