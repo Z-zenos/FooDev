@@ -7,8 +7,8 @@ import {CartPageComponent} from "./components/pages/cart-page/cart-page.componen
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'search/:searchTerm', component: HomeComponent },
-  { path: 'tag/:tag', component: HomeComponent },
-  { path: 'food/:id', component: FoodPageComponent },
+  { path: 'tags/:tag', component: HomeComponent },
+  { path: 'foods/:id', component: FoodPageComponent },
   { path: 'cart-page', component: CartPageComponent },
 
 ];
