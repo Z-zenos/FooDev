@@ -12,6 +12,7 @@ import { FoodPageComponent } from './components/pages/food-page/food-page.compon
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/partials/title/title.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,9 +27,10 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     NotFoundComponent
   ],
     imports: [
-        BrowserModule,
-        AppRoutingModule,
-        RatingModule
+      BrowserModule,
+      AppRoutingModule,
+      RatingModule,
+      HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
