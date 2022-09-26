@@ -1,10 +1,14 @@
+<!--
+  [visible]="!food" not !food.id because when we have connection to the
+  backend at the time that the food is not ready, the food is undefined
+-->
 <app-not-found
-  [visible]="!food.id"
+  [visible]="!food"
   notFoundMessage="Not Found Food "
   resetLinkText="Go To HomePage 🏠"
 >
 </app-not-found>
-<div *ngIf="food.id" class="container">
+<div *ngIf="food" class="container">
   <img [src]="food.imageUrl" [alt]="food.name"/>
 
   <div class="details">
@@ -34,7 +38,7 @@
 
     <div class="tags">
       <span class="icon">🔰</span>
-      <a *ngFor="let tag of food.tags" routerLink="/tag/{{ tag }}">
+      <a *ngFor="let tag of food.tags" routerLink="/tags/{{ tag }}">
         {{ tag }}
       </a>
     </div>
