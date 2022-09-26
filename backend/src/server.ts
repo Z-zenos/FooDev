@@ -23,7 +23,7 @@ const app = express();
 * */
 app.use(cors({
   credentials: true,
-  origin: ['https://localhost:4200']
+  origin: ['http://localhost:4200']
   /*
     Hey express use cors so 4200 could have a request on this
     server and the credentials
