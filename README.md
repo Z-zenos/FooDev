@@ -94,6 +94,7 @@
      - install @types
      - add apis
    - npm install nodemon ts-node --save-dev
-   - add urs.ts to frontend
+   - Create constants folder holding all the content values, urls
+   - add url.ts to frontend
    - Add HttpClient module
    - Update Food Service
